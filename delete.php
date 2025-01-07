@@ -4,14 +4,21 @@ session_start();
 
 include "service/database.php"; 
 
-// Tombol Delete di Dashboard //
-if(isset($_SESSION["delete"])) {
-    header("location: dashboard.php");
+// Mengecek User ID dan Mengambil //
+if (isset($_GET['id'])) {
+    $id = $_GET['id'];
+
+    // Konfirmasi Box Yes atau No //
+    echo '
+    <script>
+        if (confirm("Apakah Anda yakin ingin menghapus data ini?")) {
+            window.location.href = "delete_confirm.php?id=' . $id . '"; 
+        } else {
+            window.location.href = "dashboard.php";
+        }
+    </script>
+    ';
 }
 
-// Menghapus Data dari Databse //
-$id = $_GET['id'];
-$result = mysqli_query($koneksi, "DELETE FROM worker WHERE id = $id");
-header("Location: dashboard.php");
 
 ?>
