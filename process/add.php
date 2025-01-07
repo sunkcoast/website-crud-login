@@ -1,11 +1,13 @@
 <?php
 
-// Notif Kecil diatas Tombol//
-$register_message = "";
+// Menghapus Notif Session Already Active //
+if (session_status() === PHP_SESSION_NONE) {
+    session_start();}
 
-// Tombol Add di Dashboard //
-if(isset($_SESSION["add"])) {
-    header("location: dashboard.php");
+// Memastikan Login Sebelum masuk Dashboard //
+if (!isset($_SESSION["login"])) {
+    header("Location: login.php");
+    exit();
 }
 
 // MENGECEK DATA USER LOGIN 
@@ -20,6 +22,14 @@ if (isset($_POST["add"])) {
     ('$nama', '$pekerjaan', '$alamat', '$no_handphone')");
 
     if ($insert) {
-        $register_message = "Data Pekerja Berhasil Ditambahkan";
+        echo '
+        <script>
+            alert("Data Berhasil Ditambahkan");
+            window.location.href="login.php";
+        </script>
+        ';
     } 
 }
+
+
+?>

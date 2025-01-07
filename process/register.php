@@ -27,10 +27,10 @@
  
         //  NOTIF KETIKA TOMBOL DAFTAR DIKLIK //
         if($insert) { 
-            // Notif Jika Berhasil
+            // Notif jika Berhasil
             $register_message = "Ini daftar berhasil, silahkan login";
         }else {
-            // Muncul Jika Gagal Login
+            // Muncul jika Gagal Login
             echo '
             <script>
                 alert("Username tidak ditemukan");

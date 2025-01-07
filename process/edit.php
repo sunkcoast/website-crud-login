@@ -24,10 +24,19 @@ if (isset($_POST["edit"])) {
 
     // Memasukkan Input Baru //
     $result = mysqli_query($koneksi, "UPDATE worker SET nama = '$nama', pekerjaan = '$pekerjaan', alamat = '$alamat', no_handphone = '$no_handphone' WHERE `id` = $id");
-    $register_message = "Data pekerja berhasil diubah.";
-    header("Location: dashboard.php");
+    if ($result) {
+        echo '
+        <script>
+            alert("Data Berhasil Diubah");
+            window.location.href="login.php";
+        </script>
+        ';
+    } 
     
-    
+}
+
+if(isset($_POST["kembali"])) {
+    header("location: dashboard.php");
 }
 
 ?>
