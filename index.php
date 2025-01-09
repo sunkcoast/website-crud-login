@@ -16,6 +16,7 @@
     <header class="bg-gray-900 sticky top-0">
         <nav class="text-white container mx-auto py-4 flex justify-between items-center">
             <p class="text-3xl font-bold">PHP CRUD Login</p>
+            <!-- Tombol Login kanan atas -->
             <ul class="flex bg-gray-900">
                 <li class="px-7 py-1 hover:text-gray-500"><a href="index.php">Home</a></li>
                 <li class="px-7 py-1 hover:text-gray-500"><a href="login.php">Login</a></li>
@@ -26,7 +27,7 @@
         </nav>
     </header>
 
-    <!-- MAIN MENU -->
+    <!-- Dashboard Bagian Tengah -->
     <section class="bg-gray-900 sticky">
         <div class="container mx-auto text-center text-white h-screen flex items-center">
             <div class="mx-auto w-full sm:w-2/3 lg:w-1/2">
@@ -37,6 +38,7 @@
                     <img src="gambardata.jpg" class="rounded-full w-64 h-auto">
                 </div>
                 <div class="mt-8">
+                    <!-- Tombol dibawah Gambar -->
                     <a href="register.php"
                         class="bg-red-500 text-white py-2 px-5 rounded-xl hover:bg-red-700 transition-colors">Start Now!</a>
                 </div>

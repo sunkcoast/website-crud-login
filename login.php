@@ -1,8 +1,11 @@
 <?php 
 
-    include "service/database.php" ;
-    include "process/login.php" ;
 
+    include "service/database.php";
+    include "process/login.php";
+
+
+    
 ?>
 
 <!DOCTYPE html>
@@ -13,47 +16,54 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WEBSITE LOGIN</title>
-    <!-- Bootstrap CSS -->
-     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
-    <!-- CSS -->
-    <link rel="stylesheet" href="style.css" />
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body>
-    <!-- INI HEADER  -->
-    <header class="bg-dark text-white py-3">
-        <div class="container d-flex justify-content-between align-items-center">
-            <h3 class="mt-2">Belajar PHP Login</h3>
-            <nav>
-                <a href="index.php" class="text-white text-decoration-none me-3">Home</a>
-                <a href="login.php" class="text-white text-decoration-none me-3">Login</a>
-                <a href="register.php" class="text-white text-decoration-none">Register</a>
-            </nav>
-        </div>
+<body class="bg-gray-900">
+
+    <!-- INI HEADER -->
+    <header class="bg-gray-900 sticky top-0">
+        <nav class="text-white container mx-auto py-4 flex justify-between items-center">
+            <p class="text-3xl font-bold">PHP CRUD Login</p>
+            <ul class="flex bg-gray-900">
+                <li class="px-7 py-1 hover:text-gray-500"><a href="index.php">Home</a></li>
+                <li class="px-7 py-1 hover:text-gray-500"><a href="login.php">Login</a></li>
+                <li class="px-7 py-1 hover:text-gray-500"><a href="register.php"
+                        class="border-2 border-red-500 py-2 px-5 rounded-xl hover:bg-red-500 text-white">Register</a>
+                </li>
+            </ul>
+        </nav>
     </header>
 
-    <!-- MAIN MENU -->
-    <main class="container text-center">
-    <h1 class="mt-3"> Ini Login</h1>
+    <!-- Dashboard Login atas -->
+    <section class="bg-gray-900 py-20">
+    <div class="container mx-auto text-center text-white">
+        <div class="mx-auto w-full sm:w-2/3 lg:w-1/3">
+            <h3 class="text-3xl font-bold mb-5">Login to Your Account</h3>
+            <p class="text-gray-500 mb-5">Masukkan username dan password untuk login.</p>
 
-    <!-- Hide PASSWORD DAN USERNAME di URL -->
-    <form action="login.php" method="POST" class="w-50 mx-auto mt-3">
-      
-    <!-- Kolom Untuk Login -->
-        <div class="mb-3">
-            <input type="text" class="form-control" id="username" placeholder="kolom-username" name="username" required>
+            <!-- Form Ketika Login ID PWD -->
+            <form action="login.php" method="POST" class="bg-gray-800 p-6 rounded-lg">
+                <div class="mb-4">
+                    <input type="text" class="w-full p-3 bg-gray-700 text-white rounded-lg border-2 border-gray-600 focus:outline-none" 
+                           id="username" placeholder="Username" name="username" required>
+                </div>
+                <div class="mb-6">
+                    <input type="password" class="w-full p-3 bg-gray-700 text-white rounded-lg border-2 border-gray-600 focus:outline-none" 
+                           id="password" placeholder="Password" name="password" required>
+                </div>
+                <div class="mb-5 text-center">
+                    <button type="submit" class="w-full bg-red-500 text-white py-2 px-5 rounded-xl hover:bg-red-700" name="login">Login</button>
+                </div>
+            </form>
         </div>
-         <div class="mb-3">
-             <input type="password" class="form-control" id="password" placeholder="kolom-password" name="password" required>
-        </div>
-        <div class="mb-5 text-center">
-             <button type="submit" class="btn btn-dark w-100" name="login">Login</button>
-        </div>
-    </form>
+    </div>
+    </section>
 
 
-    <!-- INI FOOTER  -->
-    <footer class="bg-dark text-white text-center">
+    <!-- INI FOOTER -->
+    <footer class="bg-gray-900 text-white text-center py-4 mt-5">
         <i>© 2025 Ini Copyright</i>
     </footer>
 
