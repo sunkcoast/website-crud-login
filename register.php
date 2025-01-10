@@ -1,7 +1,9 @@
 <?php
 
     include "service/database.php";
+
     include "process/register.php";
+
     
 ?>
 
@@ -15,6 +17,8 @@
     <title>WEBSITE REGISTRATION</title>
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- SweetAlert Javascript -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </head>
 
 <body class="bg-gray-900">
@@ -46,15 +50,13 @@
                  <!-- Form untuk Register -->
                 <form action="register.php" method="POST" class="bg-gray-800 p-6 rounded-lg shadow-lg">
                     <div class="mb-4">
-                        <input type="text" class="w-full p-3 bg-gray-700 text-white rounded-lg border-2 border-gray-600 focus:outline-none" 
-                               placeholder="Username" name="username" required>
+                        <input type="text" class="w-full p-3 bg-gray-700 text-white rounded-lg border-2 border-gray-600 focus:outline-none" placeholder="Username" name="username" required>
                     </div>
                     <div class="mb-6">
-                        <input type="password" class="w-full p-3 bg-gray-700 text-white rounded-lg border-2 border-gray-600 focus:outline-none" 
-                               placeholder="Password" name="password" required>
+                        <input type="password" class="w-full p-3 bg-gray-700 text-white rounded-lg border-2 border-gray-600 focus:outline-none" placeholder="Password" name="password" required>
                     </div>
                     <div class="mb-5 text-center">
-                        <button type="submit" class="w-full bg-red-500 text-white py-2 px-5 rounded-xl hover:bg-red-700 transition-colors" name="register">Daftar Sekarang!</button>
+                        <button type="submit" class="w-full bg-red-500 text-white py-2 px-5 rounded-xl hover:bg-red-700" name="register">Daftar Sekarang!</button>
                     </div>
                 </form>
             </div>

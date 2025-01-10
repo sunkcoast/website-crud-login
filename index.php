@@ -8,6 +8,8 @@
     <title>WEBSITE LOGIN</title>
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- SweetAlert Javascript -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </head>
 
 <body class="bg-gray-900">
@@ -21,7 +23,7 @@
                 <li class="px-7 py-1 hover:text-gray-500"><a href="index.php">Home</a></li>
                 <li class="px-7 py-1 hover:text-gray-500"><a href="login.php">Login</a></li>
                 <li class="px-7 py-1 hover:text-gray-500"><a href="register.php"
-                        class="border-2 border-red-500 py-2 px-5 rounded-xl hover:bg-red-500 text-white">Register</a>
+                class="border-2 border-red-500 py-2 px-5 rounded-xl hover:bg-red-500 text-white">Register</a>
                 </li>
             </ul>
         </nav>
@@ -32,15 +34,13 @@
         <div class="container mx-auto text-center text-white h-screen flex items-center">
             <div class="mx-auto w-full sm:w-2/3 lg:w-1/2">
                 <h3 class="text-3xl font-bold mb-5">Bring Your Data To The Next Level</h3>
-                <p class="text-gray-500 mb-5">Tingkatkan efisiensi pengelolaan data dengan CRUD, memudahkan pembuatan,
-                    pembacaan, pembaruan, dan penghapusan data kapan saja.</p>
+                <p class="text-gray-500 mb-5">Tingkatkan efisiensi pengelolaan data dengan CRUD, memudahkan pembuatan, pembacaan, pembaruan, dan penghapusan data kapan saja.</p>
                 <div class="flex justify-center items-center mt-8">
                     <img src="gambardata.jpg" class="rounded-full w-64 h-auto">
                 </div>
                 <div class="mt-8">
                     <!-- Tombol dibawah Gambar -->
-                    <a href="register.php"
-                        class="bg-red-500 text-white py-2 px-5 rounded-xl hover:bg-red-700 transition-colors">Start Now!</a>
+                    <a href="register.php" class="bg-red-500 text-white py-2 px-5 rounded-xl hover:bg-red-700 transition-colors">Start Now!</a>
                 </div>
             </div>
         </div>
