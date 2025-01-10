@@ -22,13 +22,19 @@ if (isset($_POST["add"])) {
     ('$nama', '$pekerjaan', '$alamat', '$no_handphone')");
 
     if ($insert) {
-        echo '
-        <script>
-            alert("Data Berhasil Ditambahkan");
-            window.location.href="login.php";
-        </script>
-        ';
-    } 
+        // Notifikasi Sweet Alert
+        echo '<script type="text/javascript">
+         setTimeout(function () {
+            Swal.fire({
+                title: "Data Berhasil Ditambahkan",
+                icon: "success",
+                confirmButtonText: "OK"
+            }).then(() => {
+                window.location.href = "dashboard.php";
+            });
+         }, 300); // 1 detik delay
+    </script>';
+    }
 }
 
 

@@ -25,13 +25,19 @@ if (isset($_POST["edit"])) {
     // Memasukkan Input Baru //
     $result = mysqli_query($koneksi, "UPDATE worker SET nama = '$nama', pekerjaan = '$pekerjaan', alamat = '$alamat', no_handphone = '$no_handphone' WHERE `id` = $id");
     if ($result) {
-        echo '
-        <script>
-            alert("Data Berhasil Diubah");
-            window.location.href="login.php";
-        </script>
-        ';
-    } 
+        // Notifikasi Sweet Alert
+        echo '<script type="text/javascript">
+         setTimeout(function () {
+            Swal.fire({
+                title: "Data Berhasil Diubah",
+                icon: "success",
+                confirmButtonText: "OK"
+            }).then(() => {
+                window.location.href = "dashboard.php";
+            });
+         }, 300); // 1 detik delay
+    </script>';
+    }
     
 }
 
