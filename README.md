@@ -15,7 +15,9 @@ http://localhost/sunkcoast.com/
     <body>
       <div class="container">
         <ul> 
-          <li>
+          <li> 
+            <h4>Index page</h4>
+              <a href="![2025-01-12_195235](https://github.com/user-attachments/assets/a2b7d36f-f154-404e-a7d1-0c6e6ae97689)">
           </li>
        </ul>
       </div>
