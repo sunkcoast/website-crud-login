@@ -2,6 +2,9 @@
 
 http://localhost/sunkcoast.com/
 
+![Untitl22ed](https://github.com/user-attachments/assets/abdf3f0e-457c-4054-a846-2b71b86407ea)
+
+
 <h1>Progress Coding</h1>
  <p>To keep learning and progress faster, I’m trying to update the code every day.</p>
 
