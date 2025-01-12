@@ -16,8 +16,16 @@ http://localhost/sunkcoast.com/
       <div class="container">
         <ul> 
           <li> 
-            <h4>Index page</h4>
-              <a href="![2025-01-12_195235](https://github.com/user-attachments/assets/a2b7d36f-f154-404e-a7d1-0c6e6ae97689)">
+          <h4>Halaman Utama</h4>
+<a href="https://github.com/user-attachments/assets/a2b7d36f-f154-404e-a7d1-0c6e6ae97689">INI FOTO</a>
+          </li>
+           <li> 
+          <h4>Halaman Login</h4>
+<a href="https://github.com/user-attachments/assets/8bec55d0-c533-4265-9817-babc50a65687">INI FOTO</a>
+          </li>
+         <li>
+         <h4>Halaman Register</h4>
+<a href="https://github.com/user-attachments/assets/6f9e6f0d-a0fe-4e0a-8b7b-845c45b81791">INI FOTO</a>
           </li>
        </ul>
       </div>
