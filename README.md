@@ -2,7 +2,7 @@
 
 http://localhost/sunkcoast.com/
 
-![Untitl22ed](https://github.com/user-attachments/assets/abdf3f0e-457c-4054-a846-2b71b86407ea)
+![Struktur](https://github.com/user-attachments/assets/f06e0907-3dc4-4519-b3da-a73b38f47f2c)
 
 
 <h1>Progress Coding</h1>
